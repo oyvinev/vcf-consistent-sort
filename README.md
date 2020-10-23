@@ -20,3 +20,10 @@ Take the following examples:
 These files have the same variants, but will be sorted different by `vcf-sort` due to the differing ID field.
 
 This package re-implements `vcf-sort -c` with the addition of `-k4,5` to sort consistently on full variants.
+
+## Requirements
+
+- bash
+- GNU coreutils
+
+*NOT* Perl
