@@ -1,4 +1,4 @@
-# vcf-stable-sort
+# vcf-consistent-sort
 Sort VCFs based on chromosome, position, ref and alt
 
 The commonly used vcf-sort (https://github.com/vcftools/vcftools/blob/master/src/perl/vcf-sort) resorts to sorting on chromosome and position only (`sort -k1,1V -k2,2n`), and on matches, will sort on full line (GNU sort last resort). This will in practice mean that a consistent sort on _variants_ (chrom, pos, ref, alt) is not possible, as this is only true if the ID column is matching.
